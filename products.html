@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link al reseteador de css -->
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- link al css de la web -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/products.css">
+        <link rel="stylesheet" href="css\modal.css">
+
+        <!-- link a los iconos -->
+            <script src="https://kit.fontawesome.com/6cf4b6b45b.js" crossorigin="anonymous"></script>
+
+        <!--Links a javascript -->
+        
+
+        <!-- Link a la fuente Cookie -->
+	    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        <title>Romano Desings - Home</title>
+    </head>
+        <body>
+            <header class="mainHeader">
+                <div class="navContainer">
+                    <div class="navContent container">
+                        <div class="logo"><a href="/index.html"><h2>Romano <span class="yellowText">Desings</span></h2></a></div>
+                        <nav class="nav hide">
+                            <a href="/index.html">Inicio</a>
+                            <a href="#">Productos</a>
+                            <a href="/about.html">Sobre nosotros</a>
+                            <a href="/contact.html">Contacto</a>
+                        </nav>                
+                        <div class="headerLogos">      
+                            <div class="hamburguesa">
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                            <a class="modal_opener" title="a">
+                                <i class="fas fa-cart-shopping"></i>
+                                <span class="badge" id="cant-elementos-carrito">5</span>
+                              </a>  
+                        </div>
+                        </div>         
+                    </div>
+                </div>
+            </header>
+            <div class="main-container">
+                <div class="filtros">
+                    <div class="categorias">
+                        <h2>Categorias</h2>
+                        <ul>
+                            <li>Mesas</li>
+                            <li>Sillas</li>
+                            <li>Escritorios</li>
+                            <li>Mubles para tv</li>
+                            <li>Repisas</li>
+                            <li>Mesas ratonas</li>
+                        </ul>
+                    </div>
+                    <div class="precios">
+                        <h2>Precios</h2>
+                        <ul>
+                            <li>Hasta $10.000</li>
+                            <li>Entre $10.000 y $20.000</li>
+                            <li>Más de $20.000</li>
+                        </ul>
+                    </div>
+                    <div class="descuentos">
+                        <h2>Descuentos</h2>
+                        <ul>
+                            <li>Desde 5% OFF</li>
+                            <li>Desde 10% OFF</li>
+                            <li>Desde 15% OFF</li>
+                            <li>Desde 20% OFF</li>
+                            <li>Desde 25% OFF</li>
+                            <li>Desde 30% OFF</li>
+                            <li>Desde 35% OFF</li>
+                            <li>Desde 40% OFF</li>
+                            <li>Desde 45% OFF</li>
+                            <li>Desde 50% OFF</li>
+                            <li>Desde 55% OFF</li>
+                        <li>Desde 60% OFF</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="productos"></div>
+            </div>
+            <section class="modal">
+                <div class="modal_container">
+                    <h1>Carrito</h1>
+                    <div class="erase-container">
+                    <button class="erase-cart-button">X</button>
+                    <a class="erase-cart">Vaciar Carrito</a>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="btnfunctions">
+                        <a id="pagar-btn">Pagar</a>
+                    <a href="#" class="modal_close">Continuar chusmeando</a>
+                    <span >Precio Total: </span>
+                    <p class="precio-total" id="preciototal"></p>
+                    </div>
+
+                </div>
+            </section>
+            <footer class="footerDistributed">
+			    <div class="footerLeft">
+                    <img src="assets/img/logo.png" alt="">
+				    <h3><span class="yellowText"> Romano Desings</span></h3>
+				    <p class="footerLinks">
+					    <a href="/index.html">Inicio</a>
+					    <a href="/about.html">Sobre nosotros</a>
+					    <a href="/products.html">Productos</a>
+					    <a href="/contact.html">Contacto</a>
+				    </p>
+				    <p class="footerCompanyName">© 2022 Romano Desings Pvt. Ltd.</p>
+			    </div>
+			    <div class="footerCenter">
+				    <div>
+					    <i class="fa fa-map-marker"></i>
+					    <p><span>Av. ejemplo 444 , Santiago del Estero, Argentina</p>
+				    </div>
+				    <div>
+					    <i class="fa fa-phone"></i>
+					    <p>+54 3844-55-5555</p>
+				    </div>
+				    <div>
+					    <i class="fa fa-envelope"></i>
+					    <p><a href="mailto:contacto@mail.com">contacto@romanodesings.com</a></p>
+				    </div>
+			    </div>
+			    <div class="footerRight">
+				    <p class="footerCompanyAbout">
+					    <span>Sobre nosotros</span>
+					    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit voluptatum fugit rem nisi fugiat enim incidunt repudiandae! Possimus doloribus.
+                    </p>
+				    <div class="footerIcons">
+					    <a href="#" title="a"><i class="fa fa-facebook"></i></a>
+					    <a href="#" title="a"><i class="fa fa-twitter"></i></a>
+					    <a href="#" title="a"><i class="fa fa-instagram"></i></a>
+				    </div>
+			    </div>
+		    </footer>
+        <script src="js/productos.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js\modalcarrito.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     </body>
+</html>
