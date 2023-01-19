@@ -1,0 +1,117 @@
+/*
+///////          ///////
+////    nosotros    ////
+///////          ///////         
+*/
+
+/* Contenedor de bienvenida */
+.welcomeContainer{
+    padding-top: 5rem;
+}
+
+/* cambia de posición los elementos del contendor */
+@media(min-width: 768px){
+    .welcomeContainer{
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+    }
+}
+
+/* posiona el texto y las imagenes */
+.welcomeText, .welcomeImages{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+/* posicionamiento de las imagenes */
+.welcomeImages{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilos del texto de bienvenida */
+.welcomeText .welcome{
+    font-size: 4rem;
+    color: #e0ac1c;
+    text-align: center;
+}
+
+/* cambia la posición del texto "bienvenidos a" */
+@media(min-width: 768px){
+    .welcomeText .welcome{
+	text-align: left;
+    }
+}
+
+/* Nombre de la empresa */
+.welcomeText h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.welcomeText h2{
+    font-size: 4rem;
+}
+
+/* cambia su posición */
+@media (min-width: 768px){
+    .welcomeText h1{
+	text-align: left;
+    }
+}
+
+/* estilos del parrafo */
+.welcomeText p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* cambia su posición */
+@media(min-width: 768px){
+    .welcomeText p{
+    text-align: left
+    }
+}
+
+/* estilos del botón */
+.btn{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+}
+
+.btnDark{
+    background-color: #333;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+/* estilos de las imagenes */
+.welcomeImages img{
+    border-radius: 5px;
+}
+
+.image1, .images2{
+    flex: 0 0 calc(50% - 1rem)
+}
+
+.images2 img{
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 768px){
+    .welcomeImages{
+    padding-top: 200px;
+    }
+    .firstCard{
+        margin-bottom: -40px;
+    }
+    .employeeCard{
+        margin-bottom: 50px;
+    }
+}

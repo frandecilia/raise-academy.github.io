@@ -1,0 +1,43 @@
+
+/*
+///////          ///////
+////    contacto    ////
+///////          ///////         
+*/
+
+/* Estilos para los input */
+.form{
+    width: 50%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top:25px;
+    margin-left: 25%;
+    font-size:15px;
+}
+
+.textArea{
+    height: 200px;
+    max-height: 200px;
+}
+
+/* Estilos para el botón enviar */
+
+.formBtn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding: 15px;
+    color: #fff;
+    background: #e0ac1c;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.formBtn:hover{
+    background:#333;
+    color: #fff;
+    border: none;
+}

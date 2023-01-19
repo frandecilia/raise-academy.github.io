@@ -1,0 +1,145 @@
+/*
+///////          ///////
+////     imagen     ////
+///////          ///////         
+*/
+
+.headerContent{
+    position: relative;
+}
+
+.headerContent::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(0,0,0,.5);
+}
+
+/* estilos para el texto que dice "Bienvenido!" */
+.headerText{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerText h2{
+    color: #fff;
+    font-size: 5rem;
+}
+
+/* cambia el tamañao de la fuente */
+@media(min-width: 768px){
+    .headerText h2{
+	font-size: 8rem;
+    }
+}
+
+/* estilos para el botón */
+.btn{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+}
+
+/*
+///////          ///////
+////    nosotros    ////
+///////          ///////         
+*/
+
+/* Contenedor de bienvenida */
+.welcomeContainer{
+    padding-top: 5rem;
+}
+
+/* cambia de posición los elementos del contendor */
+@media(min-width: 768px){
+    .welcomeContainer{
+	display: flex;
+	justify-content: space-between;
+    }
+}
+
+/* posiona el texto y las imagenes */
+.welcomeText, .welcomeImages{
+    flex: 0 0 calc(50% - 1rem);
+}
+
+/* posicionamiento de las imagenes */
+.welcomeImages{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* estilos del texto de bienvenida */
+.welcomeText .welcome{
+    font-size: 4rem;
+    color: #e0ac1c;
+    text-align: center;
+}
+
+/* cambia la posición del texto "bienvenidos a" */
+@media(min-width: 768px){
+    .welcomeText .welcome{
+	text-align: left;
+    }
+}
+
+/* Nombre de la empresa */
+.welcomeText h1{
+    font-size: 5rem;
+    text-align: center;
+}
+
+/* cambia su posición */
+@media (min-width: 768px){
+    .welcomeText h1{
+	text-align: left;
+    }
+}
+
+/* estilos del parrafo */
+.welcomeText p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* cambia su posición */
+@media(min-width: 768px){
+    .welcomeText p{
+    text-align: left
+    }
+}
+
+/* estilos del botón */
+.btnDark{
+    background-color: #333;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+/* estilos de las imagenes */
+.welcomeImages img{
+    border-radius: 5px;
+}
+
+.image1, .images2{
+    flex: 0 0 calc(50% - 1rem)
+}
+
+.images2 img{
+    margin-bottom: 1rem;
+}

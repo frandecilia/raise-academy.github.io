@@ -1,0 +1,187 @@
+/*Conenedores*/
+
+.flexContainer{
+    background: #f2f2f2;
+    display: flex;
+}
+
+.cartContainer{
+    width: 100% ;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 160px 0 160px 0;
+    background: #fff;
+}
+
+.emptyCartMsg{
+    text-align: center;
+    font: bold 4rem sans-serif;
+    color: #e0ac1c;
+}
+
+/*Tarjeta de items*/
+.cartCard{
+    display: flex;
+    align-items: flex-start;
+    height: 150px;
+    width: 80%;
+    border-bottom: 1px solid rgba(100,100,100, 0.2);
+}
+
+.hide{
+    display: none;
+}
+
+.cartCard img{
+    align-self: flex-start;
+    margin: 4px 10px 0 0;
+    max-height: 80px;
+    min-height: 80px;
+    max-width:  80px;
+    min-width:  80px;
+}
+
+.cartCard .itemInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemInfo .itemInfoLeft{
+    font: 14px sans-serif;
+}
+
+.itemInfo .itemInfoLeft .itemTitle{
+    font: bold 1.9rem sans-serif;
+}
+
+.itemDelete{
+    background: none;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    color: #e0ac1c;
+    margin-left: -4px;
+}
+
+.itemQuantitySelectorContainer{
+    font: 1.7rem sans-serif;
+    display: flex;
+    margin-top: 10px;
+}
+
+.itemQuantitySelectorContainer form{
+    border: 1px solid rgba(100,100,100, 0.2);
+    border-radius: 3px;
+}
+
+.itemQuantitySelectorContainer .itemQuantitySelectorInput{
+    width: 30px;
+    height: 35px;
+    border: none;
+    background: none;
+    color: #333;
+    text-align: center;
+}
+
+.itemQuantitySelectorContainer .itemQuantitySelectorButton{
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    color: #e0ac1c;
+    background: none;
+    font-size: 20px;
+}
+
+.itemPriceTag{
+    align-self: flex-end;
+    font: 1.9rem sans-serif;
+}
+
+.totalPrice{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    height: 150px;
+    width: 80%;
+    border-bottom: 1px solid rgba(100,100,100, 0.2);
+    font: 1.9rem sans-serif;
+}
+
+.buyButtonContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 150px;
+    width: 80%;
+}
+
+.buyButton{
+    font: bold 2.3rem sans-serif;
+    background: #eebe3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+}
+
+.buyButton:active{
+    background: #333;
+}
+
+@media(min-width: 768px) {
+    .flexContainer{
+        justify-content: center;
+    }
+    .cartContainer{
+        margin: 80px 0 80px 0;
+        padding: 80px 0 80px 0;
+        background: #fff;
+        border-radius: 8px;
+        border: 1px solid rgba(100,100,100, 0.2);
+        width: 1000px;
+    }
+    .cartCard{
+        align-items: center;
+    }
+    .cartCard img{
+        align-self: center;
+        margin-right: 20px;
+        max-height: 70px;
+        min-height: 70px;
+        max-width:  70px;
+        min-width:  70px;
+    }
+    .cartCard .itemInfo{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .itemInfo .itemInfoLeft .itemTitle{
+        font-size: 2rem;
+    }
+    .itemDelete{
+        margin-left: -6px;
+    }
+    .itemQuantitySelectorContainer{
+        align-items: center;
+    }
+    .itemPriceTag{
+        align-self: center;
+    }
+
+    .buyButtonContainer{
+        justify-content: end;
+
+    }
+    
+    .buyButton{
+        width: 200px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,370 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    background-color: #f2f2f2f2;
+}
+
+/*
+///////          ///////
+////     Global     ////
+///////          ///////         
+*/
+
+/* Ajustes para el contenedor del contenido del navbar */
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* para que la imagen ocupe todo el ancho de la web */
+img{
+    width: 100%;
+}
+
+/* Para esconder el navbar */
+.hide{
+    display: none;
+}
+
+/* botón x para cerrar el navbar */
+.btnCerrar{
+    position: absolute;
+    top: 0;
+    right: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Para que se aplique el filtro oscuro al abrir el navbar */
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 4;
+}
+
+/* para animar el navbar */
+@keyframes desplazamiento{
+    0%{
+	transform: translateX(100%);
+    }
+    100%{
+	transform: translateX(0);
+    }
+}
+
+/* cambia el font size de los botones */
+@media(min-width: 768px){
+    .btn{
+	font-size: 2.2rem;
+    }
+}
+
+/* bordes para los botones */
+.borders{
+    border: 3px solid #fff;
+}
+
+/* estilo para cuando pases por encima de los botones con el mouse */
+.borders:hover{
+    color: #333;
+    background-color: #fff;
+}
+
+/*
+///////          ///////
+////   encabezado   ////
+///////          ///////         
+*/
+
+/* estilos para el contenedor del navbar */
+.navContainer{
+    background-color: #333;
+    position: relative;
+    z-index: 5;
+}
+
+/* estilos para el contenido del navbar */
+.navContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* estilos para el logo y los links del navbar */
+.logo h2, .nav a{
+    color: #fff;
+}
+
+/* estilos exclusivos para el logo */
+.logo h2{
+    font: normal 4rem 'Cookie', cursive;
+}
+
+.logo a{
+    text-decoration: none; 
+}
+    
+
+/* clase para hacer algunos textos en amarillo */
+.yellowText{
+    color: #e0ac1c;
+}
+
+/* estilos para los links del navbar */
+.nav a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding: 3rem;
+    display: block;
+    transition: color .3s ease-in-out;
+    text-align: center;
+}
+
+/* alinea los textos de diferente manera */
+@media(min-width: 768px){
+    .nav a{
+	text-align: left;
+    }
+}
+
+/* estilos para el navbar */
+.nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 8.4rem 4rem;
+    background-color: #333;
+    animation: desplazamiento .5s ease-in-out;
+}
+
+@media(min-width: 768px){
+    .nav {
+	width: 45rem;
+    }
+}
+
+
+/* permite que el texto se vuelva amarillo a la hora de pasar el mouse */
+.nav a:hover{
+    color: #e0ac1c;
+}
+
+/* cambia el cursor cuando se pasa el mouse por encima del botón x */
+.btnCerrar:hover{
+    cursor: pointer;
+}
+
+.headerLogos{
+    display: flex;
+    align-items: center;
+}
+
+/* estilos para la hamburguesa que abre el navbar */
+.hamburguesa{
+    font-size: 2em;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+/* cambia el cursor cuando se pasa el mouse por encima del botón x */
+.hamburguesa:hover{
+    cursor: pointer;
+}
+
+.fa-cart-shopping{
+    color: white;
+    font-size: 2em;
+}
+
+.fa-cart-shopping:hover{
+    cursor: pointer;
+}
+
+/*
+///////          ///////
+////     footer     ////
+///////          ///////         
+*/
+
+
+/* estilos generales del footer */
+.footerDistributed{
+	background-color: #333;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+}
+
+.footerDistributed .footerLeft,
+.footerDistributed .footerCenter,
+.footerDistributed .footerRight{
+    display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+/* sección izquierda del footer */
+.footerDistributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+/* logo de la empresa */
+.footerDistributed .footerLeft img{
+	width: 30%;
+}
+
+.yellowText{
+	color:  #e0ac1c;
+}
+
+/* links del footer */
+.footerDistributed .footerLinks{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footerDistributed .footerLinks a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footerDistributed .footerCompanyName{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+/* sección central del footer */
+.footerDistributed .footerCenter i{
+    margin-left: 0;
+}
+
+.footerDistributed .footerCenter i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footerDistributed .footerCenter p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footerDistributed .footerCenter p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footerDistributed .footerCenter p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Sección derecha del footer */
+.footerDistributed .footerCompanyAbout{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footerDistributed .footerCompanyAbout span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footerDistributed .footerIcons{
+	margin-top: 25px;
+}
+
+.footerDistributed .footerIcons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+/* Esto hace que el footer sea responsive */
+@media (min-width: 768px) {
+
+	.footerDistributed .footerLeft,
+	.footerDistributed .footerCenter,
+	.footerDistributed .footerRight{
+	    display: inline-block;
+    	vertical-align: center;
+	}
+
+	.footerDistributed .footerCenter i{
+		background-color:  #33383b;
+	    color: #ffffff;
+	    font-size: 25px;
+	    width: 38px;
+	    height: 38px;
+	    border-radius: 50%;
+	    text-align: center;
+	    line-height: 42px;
+	    margin: 10px 15px;
+	    vertical-align: middle;
+	}
+
+    .footerDistributed .footerLeft{
+        width: 30%;
+    }
+
+    .footerDistributed .footerCenter{
+        width: 35%;
+    }    
+
+    .footerDistributed .footerRight{
+        width: 30%;
+    }
+
+}
